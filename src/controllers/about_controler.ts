@@ -1,12 +1,12 @@
-import { Request, Response } from "express";
-import About from "../models/about";
+import { Request, Response } from 'express';
+import About from '../models/about';
 
 class AboutController {
   async index(req: Request, res: Response) {
     const abouts = await About.find();
-    console.log(abouts);
-    res.render("about", {
-      title: "My About",
+    // console.log(abouts);
+    res.render('about', {
+      title: 'My About',
       job: abouts[0].job,
       address: abouts[0].address,
       addressNow: abouts[0].addressNow,
@@ -14,7 +14,7 @@ class AboutController {
     });
   }
   async sayHello(req: Request, res: Response) {
-    res.send("Hello world");
+    res.send('Hello world');
   }
 }
 
