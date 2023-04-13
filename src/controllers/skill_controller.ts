@@ -4,7 +4,7 @@ import Skill from '../models/skill';
 class SkillController {
   async index(req: Request, res: Response) {
     const skills = await Skill.find();
-    console.log(skills);
+    // console.log(skills);
     res.render('skill', {
       title: 'My Skill',
       html: skills[0],
