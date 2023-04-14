@@ -1,7 +1,10 @@
 import express from 'express';
+// buoc 2 o day
 import indexRouter from './routers/index';
 import aboutRouters from './routers/about';
 import skillRouters from './routers/skill';
+import workRouters from './routers/work';
+import contactRouters from './routers/contact';
 import path from 'path';
 import { connect } from './config/connectDB';
 const app = express();
@@ -19,6 +22,8 @@ connect();
 app.use('/', indexRouter);
 app.use('/abouts', aboutRouters);
 app.use('/skills', skillRouters);
+app.use('/works', workRouters);
+app.use('/contacts', contactRouters);
 app.listen(3000, () => {
   console.log('sever runing okkk !!!');
 });

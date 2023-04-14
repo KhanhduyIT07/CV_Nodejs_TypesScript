@@ -3,7 +3,7 @@
 
 /*===== VARIABLES CSS =====*/
 :root {
-  --color-vip: #0adaff;
+  --color-vip: #fd28a4e3;
   --header-height: 3rem;
   --font-semi: 600;
   /*===== Colores =====*/
@@ -390,6 +390,9 @@ img {
 }
 
 /* ===== CONTACT =====*/
+.contact {
+  height: 100vh;
+}
 .contact__input {
   width: 100%;
   font-size: var(--normal-font-size);

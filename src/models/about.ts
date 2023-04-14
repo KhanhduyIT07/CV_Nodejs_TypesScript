@@ -1,4 +1,4 @@
-import { Schema, model } from "mongoose";
+import { Schema, model } from 'mongoose';
 
 interface IAbout {
   job: String;
@@ -20,5 +20,5 @@ const aboutSchema = new Schema<IAbout>({
     type: String,
   },
 });
-const About = model<IAbout>("About", aboutSchema);
+const About = model<IAbout>('About', aboutSchema);
 export default About;
